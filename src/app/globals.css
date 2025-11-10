@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .section {
+    @apply flex-center min-h-screen py-10;
+  }
+  .about-card {
+    @apply overflow-hidden rounded-3xl border border-[#151930] text-gray-100 shadow-lg;
+  }
+  .btn-style {
+    @apply flex-center gap-2 rounded-2xl px-6 py-3 font-medium text-gray-100 transition-colors duration-[350ms];
+  }
+  .basic-btn {
+    @apply btn-style bg-gray-900 hover:bg-gray-800;
+  }
+  .blue-btn {
+    @apply btn-style bg-blue-600 hover:bg-blue-500;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.noselect {
+  user-select: none; /* For modern browsers */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
