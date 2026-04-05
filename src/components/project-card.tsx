@@ -20,42 +20,44 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </figure>
 
-      <div className="flex flex-col gap-2">
-        {/* Project Title */}
-        <h3 className="text-xl font-bold text-gray-100">{project.title}</h3>
+      <div className="flex flex-1 flex-col justify-between gap-4">
+        <div className="flex flex-col gap-2">
+          {/* Project Title */}
+          <h3 className="text-xl font-bold text-gray-100">{project.title}</h3>
 
-        {/* Project Description */}
-        <p className="text-xs text-gray-400 sm:text-sm md:text-[15px]" style={{ lineHeight: 1.8 }}>
-          {project.description}
-        </p>
-      </div>
-
-      <footer className="flex flex-wrap items-center justify-between gap-4">
-        {/* Technologies */}
-        <div className="flex items-center">
-          {project.technologies.map((tech, i) => (
-            <span
-              key={i}
-              title={tech.name}
-              className="flex-center -ml-[5px] h-9 w-9 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950 sm:h-10 sm:w-10"
-            >
-              <Image src={tech.img} alt={tech.name} width={20} height={20} className="h-5 w-5" />
-            </span>
-          ))}
+          {/* Project Description */}
+          <p className="text-xs text-gray-400 sm:text-sm md:text-[15px]" style={{ lineHeight: 1.8 }}>
+            {project.description}
+          </p>
         </div>
 
-        {/* Live Site Button */}
-        {project.liveDome && (
-          <a
-            href={project.liveDome}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-purple-300 transition-colors hover:text-purple-400"
-          >
-            Check Live Site <solidIcons.ExternalLink size={15} />
-          </a>
-        )}
-      </footer>
+        <footer className="flex flex-wrap items-center justify-between gap-4">
+          {/* Technologies */}
+          <div className="flex items-center">
+            {project.technologies.map((tech, i) => (
+              <span
+                key={i}
+                title={tech.name}
+                className="flex-center -ml-[5px] h-9 w-9 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950 sm:h-10 sm:w-10"
+              >
+                <Image src={tech.img} alt={tech.name} width={20} height={20} className="h-5 w-5" />
+              </span>
+            ))}
+          </div>
+
+          {/* Live Site Button */}
+          {project.liveDome && (
+            <a
+              href={project.liveDome}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs text-purple-300 transition-colors hover:text-purple-400 sm:text-sm"
+            >
+              Check Live Site <solidIcons.ExternalLink size={15} />
+            </a>
+          )}
+        </footer>
+      </div>
     </div>
   );
 }
