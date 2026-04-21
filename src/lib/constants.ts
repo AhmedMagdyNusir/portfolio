@@ -20,7 +20,7 @@ export const author = {
   img: "/imgs/me.jpg",
   name: "Ahmed Magdy",
   jobTitle: "Full Stack Engineer",
-  bio: "Full Stack Engineer with 2+ years of experience building scalable systems and production-ready applications. Experienced with Nest.js, Next.js, and modern databases, with hands-on work in ERP and user-focused platforms.",
+  bio: "Full Stack Engineer with 2+ years of experience building scalable ERP systems and user-centric platforms. Specialized in NestJS, Next.js, and designing scalable data architectures using PostgreSQL and MongoDB. Experienced in complex troubleshooting and delivering high-performance applications with a focus on modern UI. Demonstrated experience migrating legacy systems and implementing secure role-based access controls.",
   email: "ahmedmagdynusir@gmail.com",
   cvLink: "/Ahmed Magdy CV.pdf",
 };

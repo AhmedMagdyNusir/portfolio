@@ -8,7 +8,7 @@ export default function ProjectsSection({ className = "" }: { className?: string
         <h2 className="noselect mb-10 text-center text-3xl font-bold text-gray-50">
           A small selection of <span className="text-purple-300">recent projects</span>
         </h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
