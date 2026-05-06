@@ -43,9 +43,12 @@ export default function AboutSection({ className = "" }: { className?: string })
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="absolute left-0 top-0 object-cover"
             />
-            <h3 className="relative z-10 w-[385px] p-6 text-[1.5rem] font-bold">
-              I prioritize client collaboration, fostering open communication
-            </h3>
+
+            {/*
+              <h3 className="relative z-10 w-[385px] p-6 text-[1.5rem] font-bold">
+                I prioritize client collaboration, fostering open communication
+              </h3>
+            */}
           </article>
 
           <div className={`grid grid-cols-1 ${GAP} grid-rows-2 lg:col-span-2`}>
@@ -64,7 +67,7 @@ export default function AboutSection({ className = "" }: { className?: string })
 
               {/* Content */}
               <div className="relative z-10 flex h-full w-full flex-col justify-center gap-2 bg-gradient-to-r from-gray-900 from-[30%] to-[#03071225] px-10">
-                <p className="text-xs text-gray-400 lg:text-sm">I constantly try to improve</p>
+                <p className="text-xs text-gray-400 lg:text-sm">Constantly try to improve</p>
                 <h3 className="text-xl font-bold lg:text-[1.65rem]">My tech stack</h3>
               </div>
             </article>

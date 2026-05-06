@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         style={{ backgroundImage: "radial-gradient(circle, #426090, #13162d)", aspectRatio: "5/3" }}
         className="relative flex w-full justify-center overflow-hidden rounded-xl md:rounded-3xl"
       >
-        <div className="relative mt-[10px] h-[calc(100%+10px)] w-[85%]">
+        <div className="relative mt-[7.5px] h-[calc(100%+10px)] w-[90%]">
           <Image
             src={project.img}
             alt={project.title}

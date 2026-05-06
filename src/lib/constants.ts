@@ -20,9 +20,9 @@ export const author = {
   img: "/imgs/me.jpg",
   name: "Ahmed Magdy",
   jobTitle: "Full Stack Engineer",
-  bio: "Full Stack Engineer with 2+ years of experience building scalable ERP systems and user-centric platforms. Specialized in NestJS, Next.js, and designing scalable data architectures using PostgreSQL and MongoDB. Experienced in complex troubleshooting and delivering high-performance applications with a focus on modern UI. Demonstrated experience migrating legacy systems and implementing secure role-based access controls.",
+  bio: "Full Stack Engineer with hands-on experience building scalable ERP systems and user-centric platforms. Specialized in NestJS, Next.js, and designing scalable data architectures using PostgreSQL and MongoDB. Experienced in complex troubleshooting and delivering high-performance applications with a focus on modern UI. Demonstrated experience migrating legacy systems and implementing secure role-based access controls.",
   email: "ahmedmagdynusir@gmail.com",
-  cvLink: "/Ahmed Magdy CV.pdf",
+  cvLink: "/Ahmed_Magdy_CV.pdf",
 };
 
 export const techStack = [
@@ -36,6 +36,8 @@ export const techStack = [
   "NestJS",
   "MongoDB",
   "PostgreSQL",
+  "Nginx",
+  "Docker",
   "RESTful APIs",
   "WebSockets",
   "Webpack",
@@ -58,7 +60,7 @@ export const projects: Project[] = [
   {
     title: "Gen Z App",
     description:
-      "A mental health platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
+      "A healthcare platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
     img: "/imgs/projects/gen-z-project.png",
     technologies: [technologies.TS, technologies.MongoDB, technologies.Nest, technologies.Next, technologies.Tailwind],
     liveDome: "https://genzapp.com",
