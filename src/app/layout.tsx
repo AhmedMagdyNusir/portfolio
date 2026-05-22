@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import * as Sentry from "@sentry/nextjs";
 import { Inter } from "next/font/google";
 import { author } from "@/lib/constants";
 
@@ -9,7 +10,13 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = { title: author.name, description: author.bio };
+export function generateMetadata(): Metadata {
+  return {
+    title: author.name,
+    description: author.bio,
+    other: { ...Sentry.getTraceData() },
+  };
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
