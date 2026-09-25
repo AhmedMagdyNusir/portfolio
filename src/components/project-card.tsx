@@ -10,11 +10,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Open ${project.title} image`}
-        className="block opacity-100 transition-opacity hover:opacity-80"
+        className="block opacity-100 transition-opacity hover:opacity-85"
+        title={`Open ${project.title} image in new tab`}
       >
         <figure
           style={{ backgroundImage: "radial-gradient(circle, #426090, #13162d)", aspectRatio: "5/3" }}
-          className="relative flex w-full cursor-pointer justify-center overflow-hidden rounded-xl md:rounded-3xl"
+          className="relative flex w-full justify-center overflow-hidden rounded-xl md:rounded-3xl"
         >
           <div className="relative mt-[7.5px] h-[calc(100%+10px)] w-[90%]">
             <Image
