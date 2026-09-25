@@ -5,20 +5,28 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative flex flex-col gap-4 rounded-3xl border border-gray-800 p-5 sm:p-6">
       {/* Project Image */}
-      <figure
-        style={{ backgroundImage: "radial-gradient(circle, #426090, #13162d)", aspectRatio: "5/3" }}
-        className="relative flex w-full justify-center overflow-hidden rounded-xl md:rounded-3xl"
+      <a
+        href={project.img}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Open ${project.title} image`}
+        className="block opacity-100 transition-opacity hover:opacity-80"
       >
-        <div className="relative mt-[7.5px] h-[calc(100%+10px)] w-[90%]">
-          <Image
-            src={project.img}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="rotate-3 rounded-md object-cover object-top shadow"
-          />
-        </div>
-      </figure>
+        <figure
+          style={{ backgroundImage: "radial-gradient(circle, #426090, #13162d)", aspectRatio: "5/3" }}
+          className="relative flex w-full cursor-pointer justify-center overflow-hidden rounded-xl md:rounded-3xl"
+        >
+          <div className="relative mt-[7.5px] h-[calc(100%+10px)] w-[90%]">
+            <Image
+              src={project.img}
+              alt={project.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rotate-3 rounded-md object-cover object-top shadow"
+            />
+          </div>
+        </figure>
+      </a>
 
       <div className="flex flex-1 flex-col justify-between gap-4">
         <div className="flex flex-col gap-2">
