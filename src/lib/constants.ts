@@ -14,6 +14,7 @@ export const technologies = {
   Express: { name: "Express.js", img: "/imgs/technologies/express.svg" },
   Drizzle: { name: "Drizzle ORM", img: "/imgs/technologies/drizzle.svg" },
   ChartJS: { name: "ChartJS", img: "/imgs/technologies/chartjs.svg" },
+  Go: { name: "Go", img: "/imgs/technologies/go.svg" },
 };
 
 export const author = {
@@ -50,6 +51,20 @@ export const techStack = [
 
 export const experiences: Project[] = [
   {
+    title: "MOG ERP",
+    description:
+      "A manufacturing ERP for commercial kitchen equipment that connects sales, production, procurement, delivery, and installation on one centralized platform.",
+    img: "/imgs/projects/mog-project.png",
+    technologies: [
+      technologies.TS,
+      technologies.Postgres,
+      technologies.Nest,
+      technologies.Next,
+      technologies.Tailwind,
+      technologies.ChartJS,
+    ],
+  },
+  {
     title: "Gen Z App",
     description:
       "A healthcare platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
@@ -68,6 +83,13 @@ export const experiences: Project[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    title: "Namy",
+    description:
+      "A multi-tenant MENA-focused ERP and commerce platform for SMEs, with inventory, sales, purchasing, and accounting as first-class citizens.",
+    img: "/imgs/projects/namy-project.png",
+    technologies: [technologies.Go, technologies.Postgres, technologies.Vite, technologies.React, technologies.Tailwind],
+  },
   {
     title: "Pro Sales CRM",
     description:
