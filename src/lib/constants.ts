@@ -48,23 +48,26 @@ export const techStack = [
   "HTML",
 ];
 
-export const projects: Project[] = [
-  {
-    title: "Leopard ERP & Online Store",
-    description:
-      "A comprehensive ERP and online store solution for Leopard. The system manages inventory, orders, and customer relationships, while the online store showcases products and provides a seamless shopping experience.",
-    img: "/imgs/projects/leopard-project.png",
-    technologies: [technologies.TS, technologies.Postgres, technologies.Nest, technologies.Next, technologies.Tailwind],
-    liveDome: "https://leopardegy.com",
-  },
+export const experiences: Project[] = [
   {
     title: "Gen Z App",
     description:
       "A healthcare platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
     img: "/imgs/projects/gen-z-project.png",
-    technologies: [technologies.TS, technologies.MongoDB, technologies.Nest, technologies.Next, technologies.Tailwind],
+    technologies: [technologies.TS, technologies.Postgres, technologies.Nest, technologies.Next, technologies.Tailwind],
     liveDome: "https://genzapp.com",
   },
+  {
+    title: "Leopard Stores",
+    description:
+      "An online store solution for Leopard with integrated accounting, inventory, orders, and customer management for a seamless shopping experience.",
+    img: "/imgs/projects/leopard-project.png",
+    technologies: [technologies.TS, technologies.MongoDB, technologies.Express, technologies.React, technologies.Tailwind],
+    liveDome: "https://leopardegy.com",
+  },
+];
+
+export const projects: Project[] = [
   {
     title: "Pro Sales CRM",
     description:
