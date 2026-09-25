@@ -6,6 +6,7 @@ export const technologies = {
   Vite: { name: "Vite", img: "/imgs/technologies/vite.svg" },
   React: { name: "React", img: "/imgs/technologies/react.svg" },
   Next: { name: "Next", img: "/imgs/technologies/next.svg" },
+  Astro: { name: "Astro", img: "/imgs/technologies/astro.svg" },
   Tailwind: { name: "Tailwind", img: "/imgs/technologies/tailwind.svg" },
   MongoDB: { name: "MongoDB", img: "/imgs/technologies/mongo.svg" },
   Postgres: { name: "PostgreSQL", img: "/imgs/technologies/postgres.svg" },
@@ -60,6 +61,7 @@ export const experiences: Project[] = [
       technologies.Postgres,
       technologies.Nest,
       technologies.Next,
+      technologies.React,
       technologies.Tailwind,
       technologies.ChartJS,
     ],
@@ -69,7 +71,15 @@ export const experiences: Project[] = [
     description:
       "A healthcare platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
     img: "/imgs/projects/gen-z-project.png",
-    technologies: [technologies.TS, technologies.Postgres, technologies.Nest, technologies.Next, technologies.Tailwind],
+    technologies: [
+      technologies.TS,
+      technologies.Postgres,
+      technologies.Nest,
+      technologies.Next,
+      technologies.React,
+      technologies.Tailwind,
+      technologies.ChartJS,
+    ],
     liveDome: "https://genzapp.com",
   },
   {
@@ -84,11 +94,19 @@ export const experiences: Project[] = [
 
 export const projects: Project[] = [
   {
-    title: "Namy",
+    title: "Namy SaaS ERP",
     description:
       "A multi-tenant MENA-focused ERP and commerce platform for SMEs, with inventory, sales, purchasing, and accounting as first-class citizens.",
     img: "/imgs/projects/namy-project.png",
-    technologies: [technologies.Go, technologies.Postgres, technologies.Vite, technologies.React, technologies.Tailwind],
+    technologies: [
+      technologies.Go,
+      technologies.Postgres,
+      technologies.Astro,
+      technologies.Vite,
+      technologies.React,
+      technologies.Tailwind,
+      technologies.ChartJS,
+    ],
   },
   {
     title: "Pro Sales CRM",
