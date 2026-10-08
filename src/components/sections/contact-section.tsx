@@ -1,9 +1,12 @@
+import GridBackground from "@/components/grid-background";
 import solidIcons from "@/components/icons/solid";
 import { author } from "@/lib/constants";
 
 export default function ContactSection({ className = "" }: { className?: string }) {
   return (
     <section className={`section relative overflow-hidden ${className}`}>
+      <GridBackground />
+
       {/* Background gradient */}
       <div
         style={{ backgroundImage: "radial-gradient(ellipse, #ffffff12, #0000, #0000)" }}

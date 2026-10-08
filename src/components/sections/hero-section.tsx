@@ -1,10 +1,11 @@
 import Image from "next/image";
 import BlockQuote from "@/components/block-quote";
+import GridBackground from "@/components/grid-background";
 import { author } from "@/lib/constants";
 
 export default function HeroSection({ className = "" }: { className?: string }) {
   return (
-    <section className={`section relative ${className}`}>
+    <section className={`section relative overflow-hidden ${className}`}>
       <Image
         src="/imgs/spotlight.png"
         alt=""
@@ -13,6 +14,8 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         priority
         className="pointer-events-none absolute left-0 top-0 z-0 animate-fade object-cover"
       />
+
+      <GridBackground fadeFrom="top" />
 
       {/* Content */}
       <div className="flex-center relative w-full flex-col gap-6 px-4">
@@ -39,7 +42,7 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         </BlockQuote>
 
         <a href="#about" className="basic-btn">
-          Get to know me 🚀
+          Get to know me 👋
         </a>
       </div>
     </section>
