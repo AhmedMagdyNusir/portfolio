@@ -43,9 +43,9 @@ export default function ProjectCard({ project }: { project: Project }) {
         <footer className="flex flex-wrap items-center justify-between gap-4">
           {/* Technologies */}
           <div className="flex items-center">
-            {project.technologies.map((tech, i) => (
+            {project.technologies.map((tech) => (
               <span
-                key={i}
+                key={tech.name}
                 title={tech.name}
                 className="flex-center -ml-[5px] h-9 w-9 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950 sm:h-10 sm:w-10"
               >
@@ -55,9 +55,9 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
 
           {/* Live Site Button */}
-          {project.liveDome && (
+          {project.liveDemo && (
             <a
-              href={project.liveDome}
+              href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs text-purple-300 transition-colors hover:text-purple-400 sm:text-sm"

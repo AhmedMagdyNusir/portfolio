@@ -22,7 +22,7 @@ export default function AboutSection({ className = "" }: { className?: string })
             {author.bio}
           </p>
           <div className="flex-center flex-col gap-2 sm:flex-row">
-            <a href={author.cvLink} download="CV.pdf" className="basic-btn text-sm">
+            <a href={author.cvLink} download="Ahmed_Magdy_CV.pdf" className="basic-btn text-sm">
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>
@@ -37,7 +37,7 @@ export default function AboutSection({ className = "" }: { className?: string })
           <article className="about-card relative flex h-[415px] items-end lg:col-span-3">
             <Image
               src="/imgs/about.jpg"
-              alt="About"
+              alt=""
               priority
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

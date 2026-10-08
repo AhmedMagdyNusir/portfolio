@@ -15,7 +15,7 @@ function LightShape({ className = "", size = 20, spin = false, rotations }: Ligh
   return (
     <div className={`${className}`}>
       <div
-        className={`opacity-25 ${spin ? "animate-spin" : ""}`}
+        className={`opacity-25 ${spin ? "motion-safe:animate-spin" : ""}`}
         style={{ animationDuration: "7.5s", height: size, width: size }}
       >
         {rotations.map((rotation, index) => (

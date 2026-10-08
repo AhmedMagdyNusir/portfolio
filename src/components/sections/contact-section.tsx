@@ -26,8 +26,8 @@ export default function ContactSection({ className = "" }: { className?: string 
           <solidIcons.LocationArrow size={20} />
         </a>
 
-        <solidIcons.LightPlus className="absolute -top-12 left-1/4 animate-float" />
-        <solidIcons.LightPlus className="absolute -bottom-12 right-1/4 animate-float" />
+        <solidIcons.LightPlus className="absolute -top-12 left-1/4 motion-safe:animate-float" />
+        <solidIcons.LightPlus className="absolute -bottom-12 right-1/4 motion-safe:animate-float" />
         <solidIcons.LightStar className="absolute -top-32 right-1/4 opacity-35" spin />
         <solidIcons.LightStar className="absolute -bottom-32 left-1/4 opacity-35" spin />
       </div>

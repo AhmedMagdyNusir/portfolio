@@ -7,7 +7,7 @@ export default function HeroSection({ className = "" }: { className?: string }) 
     <section className={`section relative ${className}`}>
       <Image
         src="/imgs/spotlight.png"
-        alt="Spotlight"
+        alt=""
         quality={85}
         fill
         priority

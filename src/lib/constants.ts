@@ -25,6 +25,7 @@ export const author = {
   bio: "Full Stack Engineer with hands-on experience building scalable ERP systems and user-centric platforms. Specialized in NestJS, Next.js, and designing scalable data architectures using PostgreSQL and MongoDB. Experienced in complex troubleshooting and delivering high-performance applications with a focus on modern UI. Demonstrated experience migrating legacy systems and implementing secure role-based access controls.",
   email: "ahmedmagdynusir@gmail.com",
   cvLink: "/Ahmed_Magdy_CV.pdf",
+  siteUrl: "https://ahmedmagdynusir.com",
 };
 
 export const techStack = [
@@ -55,7 +56,7 @@ export const experiences: Project[] = [
     title: "MOG ERP",
     description:
       "A manufacturing ERP for commercial kitchen equipment that connects sales, production, procurement, delivery, and installation on one centralized platform.",
-    img: "/imgs/projects/mog-project.png",
+    img: "/imgs/projects/mog-project.webp",
     technologies: [
       technologies.TS,
       technologies.Postgres,
@@ -70,7 +71,7 @@ export const experiences: Project[] = [
     title: "Gen Z App",
     description:
       "A healthcare platform focused on supporting Gen Z users. Provides resources, articles, and interactive tools to improve emotional, cognitive, and social wellness.",
-    img: "/imgs/projects/gen-z-project.png",
+    img: "/imgs/projects/gen-z-project.webp",
     technologies: [
       technologies.TS,
       technologies.Postgres,
@@ -80,15 +81,15 @@ export const experiences: Project[] = [
       technologies.Tailwind,
       technologies.ChartJS,
     ],
-    liveDome: "https://genzapp.com",
+    liveDemo: "https://genzapp.com",
   },
   {
     title: "Leopard Stores",
     description:
       "An online store solution for Leopard with integrated accounting, inventory, orders, and customer management for a seamless shopping experience.",
-    img: "/imgs/projects/leopard-project.png",
+    img: "/imgs/projects/leopard-project.webp",
     technologies: [technologies.TS, technologies.MongoDB, technologies.Express, technologies.React, technologies.Tailwind],
-    liveDome: "https://leopardegy.com",
+    liveDemo: "https://leopardegy.com",
   },
 ];
 
@@ -97,7 +98,7 @@ export const projects: Project[] = [
     title: "Namy SaaS ERP",
     description:
       "A multi-tenant MENA-focused ERP and commerce platform for SMEs, with inventory, sales, purchasing, and accounting as first-class citizens.",
-    img: "/imgs/projects/namy-project.png",
+    img: "/imgs/projects/namy-project.webp",
     technologies: [
       technologies.Go,
       technologies.Postgres,
@@ -112,9 +113,9 @@ export const projects: Project[] = [
     title: "Pro Sales CRM",
     description:
       "A CRM platform that simplifies sales, optimizes customer management, and increases productivity with lead tracking, automation, and analytics.",
-    img: "/imgs/projects/pro-sales-project.jpg",
+    img: "/imgs/projects/pro-sales-project.webp",
     technologies: [technologies.JS, technologies.Vite, technologies.React, technologies.Tailwind, technologies.ChartJS],
-    liveDome: "https://ahmedmagdynusir.github.io/pro-sales-crm",
+    liveDemo: "https://ahmedmagdynusir.github.io/pro-sales-crm",
   },
 ];
 

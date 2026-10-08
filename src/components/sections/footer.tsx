@@ -14,6 +14,7 @@ export default function Footer({ className = "" }: { className?: string }) {
               key={social.name}
               href={social.link}
               title={social.name}
+              aria-label={social.name}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-center h-9 w-9 rounded-lg border border-gray-800 bg-gray-900 text-gray-300 transition-colors hover:bg-gray-800 hover:text-gray-200"
