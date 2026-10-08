@@ -1,4 +1,4 @@
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck, FaGraduationCap } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { FiExternalLink, FiLock, FiTool } from "react-icons/fi";
 import { TiLocationArrow } from "react-icons/ti";
@@ -56,6 +56,7 @@ export function LightStar({
 
 const solidIcons = {
   Check: FaCheck,
+  GraduationCap: FaGraduationCap,
   Download: FiDownload,
   ExternalLink: FiExternalLink,
   Lock: FiLock,

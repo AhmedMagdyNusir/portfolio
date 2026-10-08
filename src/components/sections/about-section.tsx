@@ -3,7 +3,7 @@ import BlockQuote from "@/components/block-quote";
 import EmailButton from "@/components/email-button";
 import solidIcons from "@/components/icons/solid";
 import outlineIcons from "@/components/icons/outline";
-import { author, techStack } from "@/lib/constants";
+import { author, education, techStack } from "@/lib/constants";
 
 const GAP = "gap-8";
 
@@ -44,11 +44,18 @@ export default function AboutSection({ className = "" }: { className?: string })
               className="absolute left-0 top-0 object-cover"
             />
 
-            {/*
-              <h3 className="relative z-10 w-[385px] p-6 text-[1.5rem] font-bold">
-                I prioritize client collaboration, fostering open communication
-              </h3>
-            */}
+            {/* Education */}
+            <div className="relative z-10 flex w-full flex-col gap-2 bg-gradient-to-t from-gray-950 via-gray-950/80 to-transparent p-6 pt-24 md:p-8 md:pt-28">
+              <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-purple-300">
+                <solidIcons.GraduationCap size={16} />
+                Education
+              </p>
+              <h3 className="text-xl font-bold lg:text-[1.65rem]">{education.degree}</h3>
+              <p className="text-sm text-gray-300">
+                {education.university} · {education.location}
+              </p>
+              <p className="text-xs text-gray-400 lg:text-sm">{education.period}</p>
+            </div>
           </article>
 
           <div className={`grid grid-cols-1 ${GAP} grid-rows-2 lg:col-span-2`}>

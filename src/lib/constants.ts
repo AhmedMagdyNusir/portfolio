@@ -28,6 +28,13 @@ export const author = {
   siteUrl: "https://ahmedmagdynusir.com",
 };
 
+export const education = {
+  degree: "Bachelor of Computer Science",
+  university: "Helwan University",
+  location: "Cairo, Egypt",
+  period: "Oct 2020 - Jun 2024",
+};
+
 export const techStack = [
   "React",
   "Next.js",
