@@ -26,9 +26,9 @@ export default function AboutSection({ className = "" }: { className?: string })
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>
-            <a href="#projects" className="blue-btn text-sm">
+            <a href="#experiences" className="blue-btn text-sm">
               <outlineIcons.LocationArrow size={17.5} />
-              See my projects
+              Explore my experience
             </a>
           </div>
         </BlockQuote>

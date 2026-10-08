@@ -1,6 +1,35 @@
 import Image from "next/image";
 import solidIcons from "@/components/icons/solid";
 
+const statuses = {
+  internal: {
+    label: "Internal project",
+    description: "Built for an organization's internal use, so it isn't publicly available",
+    icon: solidIcons.Lock,
+    className: "border-gray-700 bg-gray-900 text-gray-300",
+  },
+  "under-construction": {
+    label: "Under construction",
+    description: "Still in active development, a live site is coming soon",
+    icon: solidIcons.Tool,
+    className: "border-amber-500/30 bg-amber-500/10 text-amber-300",
+  },
+};
+
+function StatusBadge({ status }: { status: NonNullable<Project["status"]> }) {
+  const { label, description, icon: Icon, className } = statuses[status];
+
+  return (
+    <span
+      title={description}
+      className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium ${className}`}
+    >
+      <Icon size={13} />
+      {label}
+    </span>
+  );
+}
+
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative flex flex-col gap-4 rounded-3xl border border-gray-800 p-5 sm:p-6">
@@ -65,6 +94,9 @@ export default function ProjectCard({ project }: { project: Project }) {
               Check Live Site <solidIcons.ExternalLink size={15} />
             </a>
           )}
+
+          {/* Status Badge (shown when there's no live site) */}
+          {!project.liveDemo && project.status && <StatusBadge status={project.status} />}
         </footer>
       </div>
     </div>

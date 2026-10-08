@@ -39,7 +39,7 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         </BlockQuote>
 
         <a href="#about" className="basic-btn">
-          Show my work 🚀
+          Get to know me 🚀
         </a>
       </div>
     </section>

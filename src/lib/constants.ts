@@ -57,6 +57,7 @@ export const experiences: Project[] = [
     description:
       "A manufacturing ERP for commercial kitchen equipment that connects sales, production, procurement, delivery, and installation on one centralized platform.",
     img: "/imgs/projects/mog-project.webp",
+    status: "internal",
     technologies: [
       technologies.TS,
       technologies.Postgres,
@@ -99,6 +100,7 @@ export const projects: Project[] = [
     description:
       "A multi-tenant MENA-focused ERP and commerce platform for SMEs, with inventory, sales, purchasing, and accounting as first-class citizens.",
     img: "/imgs/projects/namy-project.webp",
+    status: "under-construction",
     technologies: [
       technologies.Go,
       technologies.Postgres,
