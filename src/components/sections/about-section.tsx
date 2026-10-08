@@ -45,7 +45,7 @@ export default function AboutSection({ className = "" }: { className?: string })
             />
 
             {/* Education */}
-            <div className="relative z-10 flex w-full flex-col gap-2 bg-gradient-to-t from-gray-950 via-gray-950/80 to-transparent p-6 pt-24 md:p-8 md:pt-28">
+            <div className="relative z-10 flex w-full flex-col gap-1.5 bg-gradient-to-t from-gray-950 via-gray-950/80 to-transparent p-6 pt-24 sm:gap-2 md:p-8 md:pt-28">
               <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-purple-300">
                 <solidIcons.GraduationCap size={16} />
                 Education
