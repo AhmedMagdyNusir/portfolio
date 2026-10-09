@@ -36,12 +36,12 @@ export default function AboutSection({ className = "" }: { className?: string })
         <div className={`grid grid-cols-1 ${GAP} lg:grid-cols-5`}>
           <article className="about-card relative flex h-[415px] items-end lg:col-span-3">
             <Image
-              src="/imgs/about.jpg"
+              src="/imgs/graduation.webp"
               alt=""
               priority
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="absolute left-0 top-0 object-cover"
+              className="absolute left-0 top-0 object-cover object-[80%_center]"
             />
 
             {/* Education */}
