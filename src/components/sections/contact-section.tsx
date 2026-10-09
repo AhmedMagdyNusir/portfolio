@@ -21,7 +21,7 @@ export default function ContactSection({ className = "" }: { className?: string 
         >
           Ready to take <span className="text-purple-300">your</span> digital presence to the next level?
         </h2>
-        <p className="w-[500px] max-w-full text-center text-gray-400 md:w-[650px]">
+        <p className="w-[500px] max-w-full px-2 text-center leading-relaxed text-gray-400 md:w-[650px]">
           Let&apos;s make something special. Let&apos;s discuss how I can help you achieve your goals.
         </p>
         <a className="basic-btn border border-gray-800" href={`mailto:${author.email}`}>
