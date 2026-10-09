@@ -40,7 +40,8 @@ export default function AboutSection({ className = "" }: { className?: string })
               alt=""
               priority
               fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={90}
+              sizes="(max-width: 1024px) 100vw, 60vw"
               className="absolute left-0 top-0 object-cover object-[80%_center]"
             />
 
